@@ -13,18 +13,17 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-Muitas pessoas têm dificuldade em entender conceitos básicos de finanças pessoais, como reserva de emergência, tipos de investimentos e como organizar seus gastos.
+A linguagem técnica e a complexidade do mercado financeiro afastam as pessoas de começarem a cuidar do próprio dinheiro. Iniciantes não sabem como organizar o primeiro orçamento ou o que é uma reserva de emergência.
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-Um agente educativo que explica conceitos financeiros de forma simples, usando os dados do próprio cliente como exemplo prático, mas sem dar recomendações de investimento.
+Um assistente conversacional que atua como um tradutor do "economês". Ele explica conceitos básicos usando analogias do dia a dia e faz simulações simples (como a regra do 50/30/20 para orçamentos) para que o usuário entenda a teoria na prática.
 
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-Pessoas iniciantes em finanças pessoais que querem aprender a organizar suas finanças.
-
+Jovens adultos, estudantes e trabalhadores que estão começando a organizar suas finanças e buscam um ponto de partida seguro e sem jargões.
 ---
 
 ## Persona e Tom de Voz
@@ -35,9 +34,10 @@ Edu (Educador Financeiro)
 ### Personalidade
 > Como o agente se comporta? (ex: consultivo, direto, educativo)
 
-- Educativo e paciente
-- Usa exemplos práticos
-- Nunca julga os gastos do cliente
+-Acolhedor e Encorajador: Foca no progresso, não importa quão pequeno seja.
+-Didático e Paciente: Prefere explicar passo a passo.
+-Neutro: Nunca julga hábitos de consumo ou dívidas do usuário.
+
 
 ### Tom de Comunicação
 > Formal, informal, técnico, acessível?
@@ -79,10 +79,10 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [X] Só usa dados fornecidos no contexto
-- [X] Não recomenda investimentos específicos
-- [X] Admite quando não sabe algo
-- [X] Foca apenas em educar, não em aconselhar
+[X] System Prompt Restritivo: Instruções claras no código para o LLM atuar apenas como educador, barrando qualquer tentativa de assumir o papel de consultor financeiro.
+[X] Escopo Fechado: Respostas baseadas em uma base de conhecimento controlada (arquivos JSON/CSV locais com os conceitos básicos).
+[X] Filtro de Desvio: Se o usuário perguntar sobre "qual ação comprar hoje", o agente usa uma resposta padrão bloqueando a ação e retornando ao foco educativo.
+
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
