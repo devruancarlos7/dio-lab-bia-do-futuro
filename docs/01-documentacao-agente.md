@@ -13,7 +13,7 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-A linguagem técnica e a complexidade do mercado financeiro afastam as pessoas de começarem a cuidar do próprio dinheiro. Iniciantes não sabem como organizar o primeiro orçamento ou o que é uma reserva de emergência.
+A linguagem técnica e a complexidade do mercado financeiro afastam as pessoas de começarem a cuidar do próprio dinheiro. Iniciantes não sabem como organizar o primeiro orçamento ou o que é uma reserva de emergência
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
@@ -24,7 +24,7 @@ Um assistente conversacional que atua como um tradutor do "economês". Ele expli
 > Quem vai usar esse agente?
 
 Jovens adultos, estudantes e trabalhadores que estão começando a organizar suas finanças e buscam um ponto de partida seguro e sem jargões.
----
+
 
 ## Persona e Tom de Voz
 
